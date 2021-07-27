@@ -1,0 +1,7 @@
+{
+  "name": "loginpage",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
