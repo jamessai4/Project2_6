@@ -1,14 +1,36 @@
 <ion-content>
-  <div>
+  <div id="container">
     <!-- logo app -->
     <ion-img src="../../assets/image/logo.png"></ion-img>
 
+    <!-- username input -->
     <div>
-      <ion-item>
-        <ion-icon name="person-circle"></ion-icon>
-        <ion-input type="text" ></ion-input>
+      <ion-item lines="none" class="input">
+        <ion-icon name="person"></ion-icon>
+        <ion-input type="text" placeholder="Username"></ion-input>
       </ion-item>
     </div>
+
+    <!-- Password input -->
+    <div>
+      <ion-item lines="none" class="input">
+        <ion-icon name="key"></ion-icon>
+        <ion-input [type]="showpass ? 'text' : 'password' " placeholder="Password"></ion-input>
+        <ion-icon [name]="passtoggleicon" (click)="functioniconshowpass()"></ion-icon>
+      </ion-item>
+    </div>
+
+    <!-- btn login -->
+    <div>
+      <ion-button expand="full" shape="round">Login</ion-button>
+    </div>
+
+    <div>
+      <p>Not a member ?
+        <ion-text color="primary">Register now :)</ion-text>
+      </p>
+    </div>
+ 
 
 
   </div>
